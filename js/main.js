@@ -15,3 +15,5 @@ fetch(i)
   .catch(error => {
     console.error('Error:', error);
   });
+
+  fetch(i);
