@@ -18,4 +18,5 @@ fetch(apiUrl)
 //Event listener for button clicks
 const button = document.querySelectorAll("button");
 
-document.getElementsByClassName("button").addEventListener('click', display);
+document.getElementsByClassName("button").addEventListener('click', );
+console.log(apiURL);
