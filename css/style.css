@@ -13,4 +13,9 @@ body {
 
 table {
   color: black;
+  background-color: black;
+}
+
+tr th {
+  background-color: black;
 }
