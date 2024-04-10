@@ -1,5 +1,5 @@
 // Define the API URL
-const i = 'https://pro.openweathermap.org/data/2.5/forecast/climate?zip={40513},{+1}&appid={APIKey}';
+const i = 'https://api.openweathermap.org/data/2.5/weather?q={Lexington}&appid={API key}';
 const APIKey = '8ff8627e5760145923c8962bd8e95052';
 // Make a GET request
 fetch(i)
