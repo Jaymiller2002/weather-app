@@ -15,3 +15,7 @@ fetch(apiUrl)
   .catch(error => {
     console.error('Error:', error);
   });
+//Event listener for button clicks
+const button = document.querySelectorAll("button");
+
+document.getElementsByClassName("button").addEventListener('click', display);

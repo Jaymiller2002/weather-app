@@ -1,5 +1,5 @@
 h1 {
-  color: pink;
+  color: orange;
 }
 
 body {
@@ -9,13 +9,4 @@ body {
 
 #app {
   text-align: center;
-}
-
-table {
-  color: black;
-  background-color: black;
-}
-
-tr th {
-  background-color: black;
 }
