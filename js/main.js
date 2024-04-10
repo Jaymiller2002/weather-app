@@ -1,5 +1,5 @@
 // Define the API URL
-const i = 'https://api.openweathermap.org/data/2.5/weather?zip={40513},{us}&appid={9fd938103ec5b5fb92be500ba2c85323}';
+const i = 'https://api.openweathermap.org/data/2.5/weather?zip={40513},{us}&appid={8ff8627e5760145923c8962bd8e95052}';
 
 // Make a GET request
 fetch(i)
