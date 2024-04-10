@@ -13,7 +13,7 @@ fetch(i)
     console.log(data);
   })
   .catch(error => {
-    console.error('Error:', error);
+    console.log('Error:', error);
   });
 
   fetch(i);
