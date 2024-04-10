@@ -15,5 +15,3 @@ fetch(i)
   .catch(error => {
     console.log('Error:', error);
   });
-
-  fetch(i);
