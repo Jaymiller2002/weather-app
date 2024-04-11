@@ -11,10 +11,12 @@ fetch(apiUrl)
     } 
   })
   .then(data => {
-    // Parse  the data into a javascript object
-    console.log(data)//const parsedData = JSON.parse(data);
+    //Check that we are getting info from api
+    console.log(data);
+    //If getting info, parse the data into a javascript object
+    const parsedData = JSON.parse(data);
     // Use the javascript object to create HTML elements
-    data.forEach(item => {
+    parsedData.find(item => {
      const div = document.createElement('div');
       div.textContent = item.name;
       // Append the new elements to the DOM
