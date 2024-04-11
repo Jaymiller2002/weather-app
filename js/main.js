@@ -1,7 +1,7 @@
 const buttonTemp = document.getElementById('buttonTemp');
-const buttonWeather = document.getElementById('buttonWeather');
-const buttonLatitude = document.getElementById('buttonLatitude');
-const buttonLongitude = document.getElementById('buttonLongitude');
+const buttonCity = document.getElementById('buttonCity');
+const buttonCondition = document.getElementById('buttonCondition');
+const buttonImage = document.getElementById('buttonImage');
 // Define the API URL
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?zip=40513,us&appid=9fd938103ec5b5fb92be500ba2c85323';
 // Make a GET request
@@ -17,24 +17,24 @@ fetch(apiUrl)
   .then(data => {
     //Check that we are getting info from api
     console.log(data);
-    //If getting info, parse the data into a javascript object
-    //const Data = JSON.parse(data);
-    // Use the javascript object to create HTML elements
+    
     console.log(data.main.temp);
-    buttonTemp.textContent = data.main.temp;
+
+    buttonTemp.textContent = data.main.temp;//Gets temperature
+
+    console.log(data.name);
+
+    buttonCity.textContent = data.name;//Gets city name
+
     console.log(data.weather[0].description);
-    buttonWeather.textContent = data.weather[0].description;
-    console.log(data.coord.lat);
-    buttonLatitude.textContent = data.coord.lat;
-    console.log(data.coord.lon);
-    buttonLongitude.textContent = data.coord.lon;
-    // item => 
-    //  const div = document.createElement('div');
-    //   div.textContent = item.name;
-    //   // Append the new elements to the DOM
-    //   document.body.appendChild(div);
-    // });
+
+    buttonCondition.textContent = data.weather[0].description;//Gets current weather condition
+
+    console.log(data.wind.speed);
+
+    buttonImage.textContent = data.wind.speed;//Gets current image(Need to learn how to add pics)
   })
   .catch(error => {
     console.error('There has been a problem with your fetch operation:', error);
   });
+//Function to show results when reveal is clicked
