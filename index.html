@@ -10,36 +10,38 @@
     <!-- project styles -->
     <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body class="card mb-3 container bg-light">
+  <body class="card mb-6 container bg-light">
     <div id="app">
       <h1>Weather App</h1>
     <!--Input area for zip code and then next to it a button-->
     <div>
       <input type="text" placeholder="Enter a valid zipcode"><button onclick="displayText()">Reveal Weather</button>
       <div>
-        <!--Create some kind of area or box/container for weather info--> 
-        <table class="container mb-1">
+        <!--Create some kind of area or box/container for weather info-->
+       <form> 
+        <table class="container mb-1 bg-warning">
           <tr>
             <th>City:<button id="buttonCity"></button></th>
           </tr>
         </table>
+       </form>
         <span></span>
         <div>
-          <table class="container mb-1">
+          <table class="container mb-1 bg-warning">
             <tr>
               <th>Temperature:<button id="buttonTemp"></button></th>
             </tr>
           </table>
           <span></span>
           <div>
-           <table class="container mb-1">
+           <table class="container mb-1 bg-warning">
             <tr>
               <th>Condition:<button id="buttonCondition"></button></th>
             </tr>
            </table>
            <span></span>
            <div>
-            <table class="container mb-1">
+            <table class="container mb-1 bg-warning">
               <tr>
                 <th>Image:<button id="buttonImage"></button></th>
               </tr>

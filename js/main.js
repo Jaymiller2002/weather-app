@@ -2,6 +2,9 @@ const buttonTemp = document.getElementById('buttonTemp');
 const buttonCity = document.getElementById('buttonCity');
 const buttonCondition = document.getElementById('buttonCondition');
 const buttonImage = document.getElementById('buttonImage');
+const btn = document.getElementById('btn');
+//Add eventlistener to hear for reveal button clicked
+
 // Define the API URL
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?zip=40513,us&appid=9fd938103ec5b5fb92be500ba2c85323';
 // Make a GET request
@@ -37,4 +40,3 @@ fetch(apiUrl)
   .catch(error => {
     console.error('There has been a problem with your fetch operation:', error);
   });
-//Function to show results when reveal is clicked
