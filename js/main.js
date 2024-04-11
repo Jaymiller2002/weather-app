@@ -1,13 +1,14 @@
 // Define the API URL
-const i = 'http://api.openweathermap.org/geo/1.0/direct?q=Lexington,KY,US&limit=2&appid=8ff8627e5760145923c8962bd8e95052';
+const apiUrl = 'http://api.openweathermap.org/geo/1.0/direct?q=Lexington,KY,US&limit=2&appid=8ff8627e5760145923c8962bd8e95052';
 // Make a GET request
-fetch(i)
+fetch(apiUrl)
   .then(response => {
     //Check if the request was succesful
     if (!response.ok) {
+      return response.json();
+    } else {
       throw new Error('Network response was not ok');
-    }
-    return response.json();
+    } 
   })
   .then(data => {
     // Parse  the data into a javascript object
