@@ -4,7 +4,7 @@ const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=38.0406&lon=
 fetch(apiUrl)
   .then(response => {
     //Check if the request was succesful
-    if (!response.ok) {
+    if (response.ok) {
       return response.json();
     } else {
       throw new Error('Network response was not ok');
