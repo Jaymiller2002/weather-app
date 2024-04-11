@@ -6,7 +6,7 @@ const button = document.querySelectorAll('button');
 const form = document.getElementById('revealWeather');
 
 //Add eventlistener to hear for reveal button
-
+form.addEventListener('click', button);
 //Function to reveal weather info after click
 
 // Define the API URL
