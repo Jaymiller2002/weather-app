@@ -2,8 +2,12 @@ const buttonTemp = document.getElementById('buttonTemp');
 const buttonCity = document.getElementById('buttonCity');
 const buttonCondition = document.getElementById('buttonCondition');
 const buttonImage = document.getElementById('buttonImage');
-const btn = document.getElementById('btn');
-//Add eventlistener to hear for reveal button clicked
+const button = document.querySelectorAll('button');
+const form = document.getElementById('revealWeather');
+
+//Add eventlistener to hear for reveal button
+
+//Function to reveal weather info after click
 
 // Define the API URL
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?zip=40513,us&appid=9fd938103ec5b5fb92be500ba2c85323';

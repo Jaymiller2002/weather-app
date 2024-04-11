@@ -1,7 +1,7 @@
 <!Doctype html>
 <html lang="en">
   <head>
-    <title>Hello!</title>
+    <title>Weather App</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,16 +15,14 @@
       <h1>Weather App</h1>
     <!--Input area for zip code and then next to it a button-->
     <div>
-      <input type="text" placeholder="Enter a valid zipcode"><button onclick="displayText()">Reveal Weather</button>
+      <input type="text" placeholder="Enter a valid zipcode"><form id="revealWeather"><button>Reveal Weather</button></form></div>
       <div>
         <!--Create some kind of area or box/container for weather info-->
-       <form> 
         <table class="container mb-1 bg-warning">
           <tr>
             <th>City:<button id="buttonCity"></button></th>
           </tr>
         </table>
-       </form>
         <span></span>
         <div>
           <table class="container mb-1 bg-warning">
