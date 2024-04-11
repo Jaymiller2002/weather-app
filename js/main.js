@@ -12,10 +12,10 @@ fetch(apiUrl)
   })
   .then(data => {
     // Parse  the data into a javascript object
-    const parsedData = JSON.parse(data);
+    console.log(data)//const parsedData = JSON.parse(data);
     // Use the javascript object to create HTML elements
-    parsedData.forEach(item => {
-      const div = document.createElement('div');
+    data.forEach(item => {
+     const div = document.createElement('div');
       div.textContent = item.name;
       // Append the new elements to the DOM
       document.body.appendChild(div);
