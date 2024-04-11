@@ -1,5 +1,5 @@
 // Define the API URL
-const apiUrl = 'http://api.openweathermap.org/geo/1.0/direct?q=Lexington,KY,US&limit=2&appid=9fd938103ec5b5fb92be500ba2c85323';
+const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=38.0406&lon=-84.5037&appid=9fd938103ec5b5fb92be500ba2c85323';
 // Make a GET request
 fetch(apiUrl)
   .then(response => {
