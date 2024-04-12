@@ -27,10 +27,9 @@ revealButton.addEventListener('click', function(event){
 //Add a function or eventlistener to check if input = 40513, if not return "please enter a vaild zipcode"
 inputNumber.addEventListener('input', function(event) {
   console.log(inputNumber.value);
-
-  //Loop through function to check for vaild zipcodes
-  
 });
+  //Loop through function to check for vaild zipcodes
+
 // Define the API URL
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?zip=40513,us&appid=9fd938103ec5b5fb92be500ba2c85323';
 // Make a GET request
