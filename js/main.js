@@ -5,6 +5,7 @@ const buttonImage = document.getElementById('buttonImage');
 const revealButton = document.querySelector('button');
 const form = document.getElementById('revealWeather');
 const weatherElements = document.querySelectorAll('.grid-container.mb-1.bg-warning');
+const inputNumber = document.getElementById('inputNumber');
 //Initialize a variable to track the visibility state
 let isWeatherVisible = false;
 //Hide weather info elements initially
@@ -16,12 +17,13 @@ revealButton.addEventListener('click', function(event){
   event.preventDefault();
   //Toggle the visiblity state
   isWeatherVisible = !isWeatherVisible;
-  //Loop through weather info elements and make them visible
+  //Loop through weather info elements and make them visible-if isWeather false = block if true = none
   weatherElements.forEach(element => {
     element.style.display = isWeatherVisible ? 'block': 'none';
   });
   console.log('Button clicked!');
 });
+
 
 // Define the API URL
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?zip=40513,us&appid=9fd938103ec5b5fb92be500ba2c85323';
