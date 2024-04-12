@@ -2,11 +2,22 @@ const buttonTemp = document.getElementById('buttonTemp');
 const buttonCity = document.getElementById('buttonCity');
 const buttonCondition = document.getElementById('buttonCondition');
 const buttonImage = document.getElementById('buttonImage');
-const button = document.querySelectorAll('button');
+const revealButton = document.querySelector('button');
 const form = document.getElementById('revealWeather');
-
+const weatherElements = document.querySelectorAll('.grid-container.mb-1.bg-warning');
+//Hide weather info elements initially
+weatherElements.forEach(element => {
+  element.style.display = 'none';
+});
 //Add eventlistener to hear for reveal button
-form.addEventListener('click', button);
+revealButton.addEventListener('click', function(event){
+  event.preventDefault();
+  //Loop through weather info elements and make them visible
+  weatherElements.forEach(element => {
+    element.style.display = 'block';
+  });
+  console.log('Button clicked!');
+});
 //Function to reveal weather info after click
 
 // Define the API URL
