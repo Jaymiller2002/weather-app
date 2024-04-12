@@ -53,7 +53,14 @@ fetch(apiUrl)
 
     console.log(data.wind.speed);
 
-    buttonImage.textContent = data.wind.speed;//Gets current image(Need to learn how to add pics)
+        // Create an image element
+        const img = document.createElement('img');
+        // Set the source of the image (assuming data.weather[0].icon contains the icon name)
+        img.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+        // Set any additional attributes or styles if needed
+        img.alt = 'Weather Icon'; // Set alt text for accessibility
+        // Append the image to the buttonImage element
+        buttonImage.appendChild(img);
   })
   .catch(error => {
     console.error('There has been a problem with your fetch operation:', error);
