@@ -118,7 +118,7 @@ function validateZipCode(zipCode, buttonTemp, buttonCity, buttonCondition, butto
               console.log('Temperature:', data.main.temp);
     
               // Set the temperature text content
-              buttonTemp.textContent =  data.main.temp;
+              buttonTemp.textContent =  Math.floor(data.main.temp);
               
               // Log the city name
               console.log('City:', data.name);
