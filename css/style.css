@@ -55,7 +55,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056B3; /* Darker blue on hover */
+  background-color: grey; /* Darker blue on hover */
 }
 
 table {
@@ -74,7 +74,7 @@ th button {
   border: none;
   cursor: pointer;
   font-weight: normal;
-  color: #007AFF; /* Blue color */
+  color: white; /* Blue color */
   padding: 0;
   margin: 0;
 }
